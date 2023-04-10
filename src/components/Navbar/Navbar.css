@@ -1,0 +1,27 @@
+.marginNavbar {
+    margin-left: 50px;
+}
+
+.marginTop {
+    margin-top: 15px;
+}
+
+.marginIcons {
+    margin-left: 15px;
+}
+
+.icons {
+    width: 30px;
+}
+
+.nav-item {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-icons {
+        display: none;
+    }
+}
+    

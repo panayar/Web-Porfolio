@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+:root {
+  --main-orange: #ff7315;
+  --transparent-orange: rgba(255, 115, 21, 0.1);
+  --input-gray: #f7f7f7;
+  --white: #ffffff;
+  --black: #000000;
+  --gray: #000000a9;
+  --lg: 40px;
+  --sm: 14px;
+  --md: 20px;
+  --parragraph: 18px;
+}
+
+.title {
+  font-size: var(--lg);
+  margin: 24px 0 24px 0;
+}
+
+.subtitle {
+  font-size: var(--md);
+  margin: 24px 0 24px 0;
+}
+
+.parragraph {
+  color: var(--gray);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.second-parragraph {
+  color: var(--gray);
+  font-size: var(--parragraph);
+  font-weight: 400;
+  margin: 24px 0 24px 0;
+}
+
+.textCenter {
+  margin-top: 15%;
+}
+
+/*Buttons*/
+.orgBtn {
+  width: 150px;
+  height: 45px;
+  border: none;
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  margin-right: 20px;
+  background-color: var(--main-orange);
+  border-radius: 15px;
+}
+
+.orgBtn:hover {
+  background-color: #e06513;
+  transition: 0.4s;
+}
+
+.whiteBtn {
+  width: 150px;
+  height: 45px;
+  font-size: 15px;
+  color: var(--main-orange);
+  font-weight: 600;
+  border-radius: 15px;
+  background-color: var(--white);
+  border: var(--main-orange) 2px solid;
+}
+
+.whiteBtn:hover {
+  border: var(--main-orange) 3px solid;
+  background-color: var(--transparent-orange);
+  transition: 0.5s;
+}
