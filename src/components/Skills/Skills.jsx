@@ -12,22 +12,22 @@ function Skills() {
   const services = [
     {
       title: "Unique Interfaces",
-      text: "We design original and different user interfaces, so your project has a unique and outstanding touch.",
+      text: "I design original and different user interfaces, so your project has a unique and outstanding touch.",
       icon: <BsStars />,
     },
     {
       title: "Interactive Applications",
-      text: "We develop web applications focused on interaction and dynamism, so your users have a memorable experience.",
+      text: "I develop web applications focused on interaction and dynamism, so your users have a memorable experience.",
       icon: <BsLightningChargeFill />,
     },
     {
       title: "Continuous Learning",
-      text: "We stay constantly trained in programming languages and technologies to offer innovative and quality solutions.",
+      text: "I stay constantly trained in programming languages and technologies to offer innovative and quality solutions.",
       icon: <BsHeartFill />,
     },
     {
       title: "Optimal Performance",
-      text: "We apply best practices and write clean code to ensure the scalability and maintainability of the project.",
+      text: "I apply best practices and write clean code to ensure the scalability and maintainability of the project.",
       icon: <FaFeatherAlt />,
     },
   ];
