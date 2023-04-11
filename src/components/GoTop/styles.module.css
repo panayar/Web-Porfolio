@@ -1,0 +1,25 @@
+.goTopVisible {
+  position: fixed;
+  right: 5rem;
+  bottom: 5rem;
+  z-index: 9;
+}
+.goTop {
+  border: none;
+  background-color: var(--main-orange);
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  color: white;
+}
+.goTop svg {
+  height: 3rem;
+  width: 3rem;
+  color: var(--background);
+}
+@media(min-width: 500px){
+  .goTopVisible {
+        right: 2rem;
+    bottom: 2rem;
+  }
+}

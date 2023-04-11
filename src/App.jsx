@@ -1,6 +1,7 @@
 import About from "./components/Banner/About";
 import Skills from "./components/Skills/Skills";
 import Banner from "./components/Banner/Banner";
+import { GoTop } from "./components/GoTop/GoTop";
 import Navbar from "./components/Navbar/Navbar";
 import Form from "./components/Form/Form";
 import ProjectBanner from "./components/Banner/ProjectBanner";
@@ -18,6 +19,7 @@ function App() {
           <Skills />
           <ProjectBanner />
           <Form />
+          <GoTop />
         </main>
       </div>
       <Footer />
