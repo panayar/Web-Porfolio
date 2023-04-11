@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/Web-Porfolio/static/css/main.ed995c02.css",
-    "main.js": "/Web-Porfolio/static/js/main.1c1afe16.js",
+    "main.js": "/Web-Porfolio/static/js/main.90c34a65.js",
     "static/media/middlepic.svg": "/Web-Porfolio/static/media/middlepic.3e149e5db66bc8c7d87f9ece83ac8f9e.svg",
     "static/media/robot.svg": "/Web-Porfolio/static/media/robot.b789683c907c7850bf370ec38489f238.svg",
     "static/media/selia.png": "/Web-Porfolio/static/media/selia.5e3c910c30a3ac454e68.png",
     "static/media/intra.png": "/Web-Porfolio/static/media/intra.94f589ffe67d76ea6649.png",
-    "static/media/Paula Andrea Anaya Ramirez.pdf": "/Web-Porfolio/static/media/Paula Andrea Anaya Ramirez.587018048a6661cb7ea7.pdf",
+    "static/media/CV -Paula Andrea Anaya Ramirez.pdf": "/Web-Porfolio/static/media/CV -Paula Andrea Anaya Ramirez.2b3b92490182f28e91dc.pdf",
     "static/media/tux.svg": "/Web-Porfolio/static/media/tux.82503285a86a737a4d0a516223f5a90d.svg",
     "static/media/sass.svg": "/Web-Porfolio/static/media/sass.7682e3031ee7819ac896b7de409d2d65.svg",
     "static/media/reactIcon.svg": "/Web-Porfolio/static/media/reactIcon.ffaedcd8ca209c13d52b346d358ff65d.svg",
@@ -29,10 +29,10 @@
     "static/media/angular.svg": "/Web-Porfolio/static/media/angular.9ff58b91137d06b7c375cb57517f0615.svg",
     "static/media/logo.svg": "/Web-Porfolio/static/media/logo.c7b60b686a7a2cd4e8418d3e16007223.svg",
     "main.ed995c02.css.map": "/Web-Porfolio/static/css/main.ed995c02.css.map",
-    "main.1c1afe16.js.map": "/Web-Porfolio/static/js/main.1c1afe16.js.map"
+    "main.90c34a65.js.map": "/Web-Porfolio/static/js/main.90c34a65.js.map"
   },
   "entrypoints": [
     "static/css/main.ed995c02.css",
-    "static/js/main.1c1afe16.js"
+    "static/js/main.90c34a65.js"
   ]
 }
