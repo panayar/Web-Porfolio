@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Web-Porfolio/static/css/main.ed995c02.css",
-    "main.js": "/Web-Porfolio/static/js/main.90c34a65.js",
+    "main.css": "/Web-Porfolio/static/css/main.5dd42c08.css",
+    "main.js": "/Web-Porfolio/static/js/main.8ec34891.js",
     "static/media/middlepic.svg": "/Web-Porfolio/static/media/middlepic.3e149e5db66bc8c7d87f9ece83ac8f9e.svg",
     "static/media/robot.svg": "/Web-Porfolio/static/media/robot.b789683c907c7850bf370ec38489f238.svg",
     "static/media/selia.png": "/Web-Porfolio/static/media/selia.5e3c910c30a3ac454e68.png",
@@ -28,11 +28,11 @@
     "static/media/arch.svg": "/Web-Porfolio/static/media/arch.f671a9a3bd295e5233a89c38598f659f.svg",
     "static/media/angular.svg": "/Web-Porfolio/static/media/angular.9ff58b91137d06b7c375cb57517f0615.svg",
     "static/media/logo.svg": "/Web-Porfolio/static/media/logo.c7b60b686a7a2cd4e8418d3e16007223.svg",
-    "main.ed995c02.css.map": "/Web-Porfolio/static/css/main.ed995c02.css.map",
-    "main.90c34a65.js.map": "/Web-Porfolio/static/js/main.90c34a65.js.map"
+    "main.5dd42c08.css.map": "/Web-Porfolio/static/css/main.5dd42c08.css.map",
+    "main.8ec34891.js.map": "/Web-Porfolio/static/js/main.8ec34891.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed995c02.css",
-    "static/js/main.90c34a65.js"
+    "static/css/main.5dd42c08.css",
+    "static/js/main.8ec34891.js"
   ]
 }
