@@ -10,8 +10,8 @@ function About() {
     AOS.refresh();
   }, []);
   return (
-    <section className="skills" id="aboutme">
-      <div className="row" style={{ marginTop: "12%" }}>
+    <section className={styles.aboutContainer} id="aboutme">
+      <div className="row">
         <div className={`d-lg-block d-md-none d-sm-none col-sm-12 col-lg-6 col-md-12 p-4 text-sm-justify text-center ${styles.off}`}>
           <div className={styles.center} style={{ marginTop: "200px" }}>
             <Carrousel />

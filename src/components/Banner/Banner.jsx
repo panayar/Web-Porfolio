@@ -15,8 +15,8 @@ function Banner() {
     AOS.refresh();
   }, []);
   return (
-    <div className="home" id="home">
-      <div class="row home">
+    <div className={styles.home} id="home">
+      <div class="row">
         <div class="col-sm-12 col-lg-6 col-md-12 p-4 text-sm-justify">
           <div class={styles.bannerDescription}>
             <h3 class={styles.greeting}>

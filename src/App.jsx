@@ -1,5 +1,5 @@
 import About from "./components/Banner/About";
-import Skills from "./components/About/Skills";
+import Skills from "./components/Skills/Skills";
 import Banner from "./components/Banner/Banner";
 import Navbar from "./components/Navbar/Navbar";
 import Form from "./components/Form/Form";
@@ -14,10 +14,6 @@ function App() {
         <Navbar />
         <main>
           <Banner />
-          <br />
-          <br />
-          <br />
-          <br />
           <About />
           <Skills />
           <ProjectBanner />
