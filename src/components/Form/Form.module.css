@@ -1,7 +1,7 @@
-.form-container {
+.formContainer {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  width: 25rem;
+  width: 50%;
   padding: 12px;
 }
 
@@ -53,7 +53,7 @@
   justify-self: center;
 }
 
-.primary-button {
+.primaryButton {
   background-color: var(--main-orange);
   border-radius: 8px;
   border: none;
@@ -66,15 +66,15 @@
   margin-top: 10%;
 }
 
-.social-media {
+.socialMedia {
   display: flex;
   justify-content: center;
 }
 
-.social-media img {
+.socialMedia img {
   width: 40px;
 }
 
-.social-icon {
+.socialIcon {
   margin: 18px;
 }

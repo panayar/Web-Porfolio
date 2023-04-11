@@ -1,6 +1,6 @@
-
-.marginBtn {
-  margin-top: -50%;
+.home {
+  width: 100%;
+  height: 100vh;
 }
 
 .greeting {
@@ -8,20 +8,29 @@
   display: flex;
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-
 /* pictures */
 .middlePic{
   margin-top: -120px;
   margin-bottom: -300px;
-  width: 100%;
+  width: 80%;
   object-fit: cover;
+}
+
+#bannerImg{
+  position: absolute;
+  width: 50%;
+  object-fit: cover;
+}
+
+.title {
+  font-size: var(--lg);
+  margin: 24px 0 24px 0;
+}
+
+.description{
+  color: #000000a9;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .wave {
@@ -33,22 +42,6 @@
 
 .bannerDescription{
   margin-top: 20%;
-}
-
-.orange-point {
-  font-size: 70px;
-  color: var(--main-orange);
-}
-
-#bannerImg{
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  z-index: -1;
-  margin-right: 5%;
-  margin-top: -3%;
-  object-fit: cover;
-
 }
 
 @keyframes wave {

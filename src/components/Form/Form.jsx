@@ -1,60 +1,57 @@
 import React from "react";
-import "./Form.css";
+import styles from "./Form.module.css";
 
 function Form() {
   return (
-    <div class="contact">
-      <h1 className="text-center" data-aos="fade-left" data-aos-duration="1800">
-        Contact
-        <span className="orange-point">.</span>
-      </h1>
-      <div class="form-container">
+    <section
+      class={styles.contact}
+      id={styles.contact}
+      data-aos="fade-left"
+      data-aos-duration="1300"
+    >
+      <div class={styles.formContainer} id="contact">
         <img
           src="http://drive.google.com/uc?export=view&id=1c1Bkplhr1QpWQLxeuCD51EFYyTwkRJWc"
           alt="logo"
-          class="contactLogo"
+          class={styles.contactLogo}
         />
 
-        <form action="/" class="form">
-          <label for="name" class="label">
+        <form action="/" class={styles.form}>
+          <label for="name" class={styles.label}>
             Name
           </label>
           <input
             type="name"
             id="mail"
             placeholder="Name"
-            class="input input-email"
+            class={styles.input}
           />
 
-          <label for="mail" class="label">
+          <label for="mail" class={styles.label}>
             Email address
           </label>
           <input
             type="email"
             id="mail"
             placeholder="johndoe@email.com"
-            class="input input-email"
+            class={styles.input}
           />
 
-          <label for="password" class="label">
+          <label for="password" class={styles.label}>
             Message
           </label>
           <textarea placeholder="Write your message"></textarea>
 
-          <input
-            type="submit"
-            value="Submit"
-            class="primary-button login-button"
-          />
+          <input type="submit" value="Submit" class={styles.primaryButton} />
 
-          <div class="social-media">
+          <div class={styles.socialMedia}>
             <a
               target="_blank"
               href="https://github.com/panayar"
               rel="noreferrer"
             >
               <img
-                class="social-icon"
+                class={styles.socialIcon}
                 src="http://drive.google.com/uc?export=view&id=1zKvaXauX5kL0-RJ3-9j9Nr0CaiAamOsU"
                 alt="github"
               />
@@ -65,7 +62,7 @@ function Form() {
               rel="noreferrer"
             >
               <img
-                class="social-icon"
+                class={styles.socialIcon}
                 src="http://drive.google.com/uc?export=view&id=1uAhoYeHp49TlVNDsEFJfZ36aZqkd_RiR"
                 alt="linkedin"
               />
@@ -73,7 +70,7 @@ function Form() {
           </div>
         </form>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -1,0 +1,138 @@
+.footer {
+  position: relative;
+  background-color: #0c0318;
+}
+.footer::before {
+  position: absolute;
+  content: "";
+  height: 100px;
+  width: 100%;
+  z-index: -1;
+  background: #ff7316ae;
+  filter: blur(229px);
+}
+.footerContent {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  padding: 4rem 5rem;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+.brand {
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+  color: white;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.brand span {
+  color: white;
+}
+.aboutMe {
+  margin-bottom: 1.2rem;
+  width: 90%;
+  color: white;
+  font-size: 18px;
+}
+.listItems {
+  list-style: none;
+}
+.listItem {
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+}
+.listItem a {
+  text-decoration: none;
+  color: white;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+}
+.listItem a:hover {
+  color: white;
+}
+.listItem a svg {
+  margin-right: 0.4rem;
+}
+.listTitle {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.875);
+  margin-bottom: 1.2rem;
+}
+.sun {
+  position: absolute;
+  background-color: var(--main);
+  z-index: -1;
+  width: 100%;
+  left: 0;
+  filter: blur(40px);
+  height: 16px;
+}
+.copyright,
+.copyrightMobile {
+  color: white;
+  font-size: 1rem;
+}
+.copyrightMobile {
+  display: none;
+}
+.contactContainer {
+  margin-left: 10rem;
+}
+@media (max-width: 800px) {
+  .copyright {
+    display: none;
+  }
+  .copyrightMobile {
+    display: block;
+    text-align: center;
+    padding-bottom: 1.2rem;
+  }
+}
+@media (max-width: 769px) {
+  .footerContent {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .brand,
+  .aboutMe {
+    text-align: center;
+  }
+  .aboutMe {
+    width: 100%;
+  }
+}
+@media (max-width: 769px) {
+  .footerContent {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactContainer {
+    margin: 0;
+  }
+  .navigationContainer {
+    margin-bottom: 2rem;
+  }
+  .contactContainer ul,
+  .navigationContainer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactContainer ul li,
+  .navigationContainer ul li {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .footerContent {
+    padding: 4rem 2rem;
+  }
+}

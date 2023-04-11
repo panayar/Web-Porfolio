@@ -47,6 +47,11 @@
   margin-top: 15%;
 }
 
+.orange-point{
+  font-size: 80px;
+  color: var(--main-orange);
+}
+
 /*Buttons*/
 .orgBtn {
   width: 150px;

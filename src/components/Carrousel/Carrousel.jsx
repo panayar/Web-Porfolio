@@ -17,12 +17,12 @@ import jsIcon from "../../img/jsIcon.svg";
 import github from "../../img/github.svg";
 import bootstrap from "../../img/bootstrap.svg";
 
-import "./Carrousel.css";
+import styles from "./Carrousel.module.css";
 
 function Carrousel() {
   return (
-    <div className="slider" data-aos="fade-up" data-aos-duration="1800">
-      <div className="tech">
+    <div className={styles.slider} data-aos="fade-up" data-aos-duration="1800">
+      <div className={styles.tech}>
         <div>
           <img src={cssIcon} alt="css icon" />
         </div>
@@ -78,7 +78,7 @@ function Carrousel() {
           <img src={typescript} alt="react icon" />
         </div>
       </div>
-      <div className="tech tech2">
+      <div className={`${styles.tech} ${styles.tech2}`}>
         <div>
           <img src={mongo} alt="css icon" />
         </div>

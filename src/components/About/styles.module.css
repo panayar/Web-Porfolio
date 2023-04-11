@@ -1,0 +1,39 @@
+.container {
+  margin: 2rem auto 2rem auto;
+  padding: 0 10rem;
+  max-width: 1200px;
+}
+.containerInfo {
+  text-align: center;
+}
+.containerInfo h2 {
+  font-size: 2.4rem;
+  color: #ff7315;
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.containerInfo p {
+  font-size: 1.2rem;
+}
+.servicesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (max-width: 769px) {
+  .servicesContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container {
+    margin: 2rem auto 2rem auto;
+    padding: 0 10rem;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
