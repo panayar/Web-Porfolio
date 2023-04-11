@@ -3,7 +3,7 @@ import Robot from "../../img/robot.svg";
 import MiddlePic from "../../img/middlepic.svg";
 import Typewriter from "typewriter-effect";
 import AOS from "aos"; 
-import pdf from "../../files/Paula Andrea Anaya Ramirez.pdf";
+import pdf from "../../files/CV -Paula Andrea Anaya Ramirez.pdf";
 
 import styles from "./Banner.module.css";
 
