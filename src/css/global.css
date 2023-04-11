@@ -5,6 +5,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, div, p, img, section, main{
+  overflow-y: hidden;
 }
 
 :root {

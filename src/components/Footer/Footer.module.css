@@ -45,7 +45,6 @@
 }
 .listItem {
   margin-bottom: 0.5rem;
-  white-space: nowrap;
 }
 .listItem a {
   text-decoration: none;
@@ -115,6 +114,7 @@
     align-items: center;
   }
   .contactContainer {
+    width: auto;
     margin: 0;
   }
   .navigationContainer {

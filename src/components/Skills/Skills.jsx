@@ -42,8 +42,8 @@ function Skills() {
         data-aos="fade-right"
         data-aos-duration="1800"
       >
-        <span className="orange-point">.</span>
         Skills
+        <span className="orange-point">.</span>
       </h1>
       <div
         className={styles.servicesContainer}

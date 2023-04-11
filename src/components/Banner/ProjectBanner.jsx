@@ -17,8 +17,8 @@ function ProjectBanner() {
           data-aos="fade-right"
           data-aos-duration="1800"
         >
+          My Projects
           <span className="orange-point">.</span>
-          Porfolio
         </h1>
         <div
           class="center col-sm-12 col-md-6 col-lg-3 mt-3"

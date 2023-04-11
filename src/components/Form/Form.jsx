@@ -44,7 +44,7 @@ function Form() {
 
           <input type="submit" value="Submit" class={styles.primaryButton} />
 
-          <div class={styles.socialMedia}>
+          <div class={`${styles.socialMedia} mt-3`}>
             <a
               target="_blank"
               href="https://github.com/panayar"

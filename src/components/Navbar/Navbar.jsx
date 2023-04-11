@@ -56,7 +56,7 @@ function Navbar() {
           </li>
           <li className={styles.navItem}>
             <a className="nav-link" href="#porfolio" onClick={openModal}>
-              Porfolio
+              Portfolio
             </a>
           </li>
           <li className={styles.navItem}>

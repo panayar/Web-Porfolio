@@ -19,7 +19,6 @@ function Footer() {
               journey to create unique digital experiences together!
             </p>
             <p className={styles.copyright}>
-              {" "}
               ©{currentYear} - All rights reserved.
             </p>
           </div>

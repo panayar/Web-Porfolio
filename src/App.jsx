@@ -16,8 +16,8 @@ function App() {
         <main>
           <Banner />
           <About />
-          <Skills />
           <ProjectBanner />
+          <Skills />
           <Form />
           <GoTop />
         </main>
