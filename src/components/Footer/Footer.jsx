@@ -18,7 +18,12 @@ function Footer() {
               I'm Paula Anaya, a passionate Developer. Join me on this journey
               to create unique digital experiences together!
             </p>
-            <div className={styles.listItem}>
+            <p className={`${styles.copyright} mt-2`}>
+              ©{currentYear} - All rights reserved.
+            </p>
+          </div>
+
+          <div className={styles.listItem}>
               <a href="https://github.com/panayar" target="__blank">
                 <AiFillGithub />
               </a>
@@ -32,10 +37,6 @@ function Footer() {
                 <SiGmail />
               </a>
             </div>
-            <p className={`${styles.copyright} mt-2`}>
-              ©{currentYear} - All rights reserved.
-            </p>
-          </div>
         </div>
       </footer>
     </>

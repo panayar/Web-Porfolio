@@ -70,8 +70,7 @@ export const Projects = () => {
             </p>
           </Col>
         </Row>
-        <Row data-aos="fade-up"
-              data-aos-duration="1800">
+        <Row data-aos="fade-up" data-aos-duration="1800">
           {projects.map((project, index) => {
             return <ProjectCard key={index} {...project} />;
           })}
