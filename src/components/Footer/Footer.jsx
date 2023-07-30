@@ -12,6 +12,8 @@ function Footer() {
         <div className={styles.footerContent}>
           <div>
             <div className={styles.brand}>
+
+              
               <img src={Logo} alt="logo" width={60} /> Paula Anaya
             </div>
             <p className={styles.aboutMe}>
