@@ -3,10 +3,9 @@ import Skills from "./components/Skills/Skills";
 import Banner from "./components/Banner/Banner";
 import { GoTop } from "./components/GoTop/GoTop";
 import Navbar from "./components/Navbar/Navbar";
-import Form from "./components/Form/Form";
-import ProjectBanner from "./components/Banner/ProjectBanner";
-import "./css/global.css";
 import { Footer } from "./components/Footer/Footer";
+import { Projects } from "./components/Projects/Projects";
+import Contact from "./components/Banner/Contact";
 
 function App() {
   return (
@@ -15,11 +14,11 @@ function App() {
         <Navbar />
         <main>
           <Banner />
+          <Projects/>
           <About />
-          <ProjectBanner />
           <Skills />
-          <Form />
-          <GoTop />
+          <Contact/>  
+          <GoTop /> 
         </main>
       </div>
       <Footer />

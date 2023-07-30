@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
-import Robot from "../../img/robot.svg";
-import MiddlePic from "../../img/middlepic.svg";
+
+import Circle from "../../img/circle.svg";
+import Robot from "../../img/singleRobot.svg";
 import Typewriter from "typewriter-effect";
-import AOS from "aos"; 
-import pdf from "../../files/CV -Paula Andrea Anaya Ramirez.pdf";
+import AOS from "aos";
+import "../../css/global.css";
+import pdf from "../../files/Paula Andrea Anaya Ramirez - CV.pdf";
 
 import styles from "./Banner.module.css";
 
@@ -38,7 +40,7 @@ function Banner() {
               <span className={styles.wave}>👋🏼</span>
             </h3>
             <h2 class="title" data-aos="fade-right" data-aos-duration="1300">
-              Paula Anaya, <br />a Frontend Developer
+              Paula Anaya, <br />a FullStack Developer
             </h2>
             <p
               class={styles.description}
@@ -60,16 +62,13 @@ function Banner() {
           </div>
         </div>
         <div class="col-lg-6 d-sm-none d-lg-block" id={styles.bgImg}>
-          <img id={styles.bannerImg} src={Robot} alt="bannerImage" />
-        </div>
-        <div className="col-12 text-center d-lg-none d-sm-block">
           <img
-            src={MiddlePic}
-            alt="middle"
-            className={styles.middlePic}
-            data-aos="fade-right"
-            data-aos-duration="1800"
+            id={styles.bannerImg}
+            className={styles.floating}
+            src={Robot}
+            alt="bannerImage"
           />
+          <img id={styles.circle} src={Circle} alt="circle" />
         </div>
       </div>
     </div>

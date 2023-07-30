@@ -2,6 +2,10 @@
     margin-left: 50px;
 }
 
+.nav-link :hover{
+    color: black;
+}
+
 .marginTop {
     margin-top: 15px;
 }
@@ -12,6 +16,12 @@
 
 .icons {
     width: 30px;
+    opacity: 0.7;
+}
+
+.icons:hover {
+    opacity: 1;
+    transition: 0.6s;
 }
 
 .navItem {
@@ -19,9 +29,17 @@
     margin-left: 10px;
 }
 
-@media screen and (max-width: 768px) {
-    .navbar-icons {
-        display: none;
+
+@media (max-width: 768px) {
+    .marginNavbar {
+        margin-left: 0px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    #navIcons {
+      display: none;
     }
 }
     
