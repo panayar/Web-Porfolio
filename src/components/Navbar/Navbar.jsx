@@ -45,6 +45,11 @@ function Navbar() {
             </a>
           </li>
           <li className={styles.navItem}>
+            <a className="nav-link" href="#project" onClick={openModal}>
+              Projects
+            </a>
+          </li>
+          <li className={styles.navItem}>
             <a className="nav-link" href="#aboutme" onClick={openModal}>
               About me
             </a>
@@ -55,11 +60,6 @@ function Navbar() {
             </a>
           </li>
           <li className={styles.navItem}>
-            <a className="nav-link" href="#porfolio" onClick={openModal}>
-              Portfolio
-            </a>
-          </li>
-          <li className={styles.navItem}>
             <a className="nav-link" href="#contact" onClick={openModal}>
               Contact
             </a>
@@ -67,16 +67,29 @@ function Navbar() {
         </ul>
       </div>
 
-      <div className={`${styles.navbarIcons} d-sm-none d-xs-none d-lg-block`}>
+      <div
+        className="d-sx-none d-md-none d-sm-none d-lg-block"
+        id={styles.navIcons}
+      >
         <a href="https://github.com/panayar" target="__blank" rel="noreferrer">
-          <img width="40px" src={GitHub} alt="github" className={styles.icons} />
+          <img
+            width="40px"
+            src={GitHub}
+            alt="github"
+            className={styles.icons}
+          />
         </a>
         <a
           href="https://www.linkedin.com/in/paulaanaya/"
           target="__blank"
           className={styles.marginIcons}
         >
-          <img width="35px" src={LinkedIn} alt="linkedin" className={styles.icons} />
+          <img
+            width="35px"
+            src={LinkedIn}
+            alt="linkedin"
+            className={styles.icons}
+          />
         </a>
       </div>
     </nav>

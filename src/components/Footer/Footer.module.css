@@ -40,10 +40,9 @@
   color: white;
   font-size: 18px;
 }
-.listItems {
-  list-style: none;
-}
+
 .listItem {
+  display: flex;
   margin-bottom: 0.5rem;
 }
 .listItem a {

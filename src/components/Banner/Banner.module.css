@@ -7,7 +7,7 @@
   font-size: 1.5rem;
   display: flex;
 }
-
+ 
 /* pictures */
 .middlePic{
   margin-top: -120px;
@@ -18,8 +18,17 @@
 
 #bannerImg{
   position: absolute;
-  width: 50%;
+  width: 47%;
   object-fit: cover;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+#circle{
+  position: absolute;
+  width: 50%;
+  margin-left: -2%; 
+  overflow-x: hidden;
 }
 
 .title {
@@ -43,6 +52,20 @@
 .bannerDescription{
   margin-top: 20%;
 }
+
+.floating { 
+  animation: float 8s infinite linear;
+}
+
+@keyframes float {
+  from {
+    transform: rotate(360deg) translate3d(8px, 0, 0) rotate(-360deg);
+  }
+  to {
+    transform: rotate(0deg) translate3d(8px, 0, 0) rotate(0deg);
+  }
+}
+
 
 @keyframes wave {
   0% {
@@ -70,6 +93,7 @@
     transform: rotate(0deg);
   }
 }
+
 @media (max-width: 768px) {
   #bannerImg {
     display: none;
@@ -77,6 +101,7 @@
 
   #bgImg {
     display: none;
+    flex: 1;
   }
 }
 
