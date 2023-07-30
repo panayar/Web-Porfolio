@@ -45,6 +45,11 @@ function Navbar() {
             </a>
           </li>
           <li className={styles.navItem}>
+            <a className="nav-link" href="#project" onClick={openModal}>
+              Projects
+            </a>
+          </li>
+          <li className={styles.navItem}>
             <a className="nav-link" href="#aboutme" onClick={openModal}>
               About me
             </a>
@@ -52,11 +57,6 @@ function Navbar() {
           <li className={styles.navItem}>
             <a className="nav-link" href="#skills" onClick={openModal}>
               Skills
-            </a>
-          </li>
-          <li className={styles.navItem}>
-            <a className="nav-link" href="#project" onClick={openModal}>
-              Projects
             </a>
           </li>
           <li className={styles.navItem}>
