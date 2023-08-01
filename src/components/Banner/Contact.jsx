@@ -28,7 +28,7 @@ const Contact = () => {
             </p>
 
             <div className={styles.btnContainer}>
-              <a href="https://github.com/panayar" className={styles.bannerText}>
+              <a href="https://www.linkedin.com/in/paulaanaya/" className={styles.bannerText}>
                 <button className={styles.spanText}>
                   <AiFillLinkedin className={styles.bannerIcon} />
                   paulaanaya

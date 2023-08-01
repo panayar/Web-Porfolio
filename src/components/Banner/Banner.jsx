@@ -10,7 +10,7 @@ import pdf from "../../files/Paula Andrea Anaya Ramirez - CV.pdf";
 import styles from "./Banner.module.css";
 
 function Banner() {
-  useEffect(() => {
+  useEffect(() => { 
     AOS.init({
       duration: 2000,
     });
@@ -53,7 +53,7 @@ function Banner() {
               and have been developing since 2019.
             </p>
             <br />
-            <a href="#porfolio">
+            <a href="#project">
               <button class="mt-2 orgBtn">See projects</button>
             </a>
             <a href={pdf} download>
