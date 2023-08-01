@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Web-Porfolio/static/css/main.ceb325e3.css",
-    "main.js": "/Web-Porfolio/static/js/main.3d2320f0.js",
+    "main.js": "/Web-Porfolio/static/js/main.925870bb.js",
     "static/media/singleRobot.svg": "/Web-Porfolio/static/media/singleRobot.3e0f9730eee1d912643e2f83ae72f2c9.svg",
     "static/media/adertic.png": "/Web-Porfolio/static/media/adertic.8fd8cad7f99510ae4ed4.png",
     "static/media/gpt3.png": "/Web-Porfolio/static/media/gpt3.66543d843d431594e059.png",
@@ -33,10 +33,10 @@
     "static/media/angular.svg": "/Web-Porfolio/static/media/angular.3d1492e7f57687b13f9ca843edc829bd.svg",
     "static/media/logo.svg": "/Web-Porfolio/static/media/logo.cffda69c05e1667e2583f829192d0d7a.svg",
     "main.ceb325e3.css.map": "/Web-Porfolio/static/css/main.ceb325e3.css.map",
-    "main.3d2320f0.js.map": "/Web-Porfolio/static/js/main.3d2320f0.js.map"
+    "main.925870bb.js.map": "/Web-Porfolio/static/js/main.925870bb.js.map"
   },
   "entrypoints": [
     "static/css/main.ceb325e3.css",
-    "static/js/main.3d2320f0.js"
+    "static/js/main.925870bb.js"
   ]
 }
