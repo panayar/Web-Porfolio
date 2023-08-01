@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Contact.module.css";
-import { AiFillGithub } from "react-icons/ai";
+import { AiFillLinkedin } from "react-icons/ai";
 import { SiGmail } from "react-icons/si";
 
 const Contact = () => {
@@ -30,8 +30,8 @@ const Contact = () => {
             <div className={styles.btnContainer}>
               <button className={styles.spanText}>
                 <a href="github">
-                <AiFillGithub/>
-                  paulaanayar
+                <AiFillLinkedin/>
+                  paulaanaya
                 </a>
               </button>
               <button className={styles.spanText}>

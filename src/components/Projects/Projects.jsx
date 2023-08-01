@@ -3,11 +3,40 @@ import { ProjectCard } from "../Card/ProjectCard";
 import adertic from "../../img/adertic.png";
 import intra from "../../img/intra.png";
 import weather from "../../img/weather.png";
+import hoobank from "../../img/hoobank.png";
+import gpt3 from "../../img/gpt3.png";
 import selia from "../../img/selia.png";
 import "./projects.css";
 
 export const Projects = () => {
   const projects = [
+    {
+      title: "Hoobank",
+      description:
+        "Website developed in react and tailwind, for a company that provides financial services",
+      imgUrl: hoobank,
+      url: "",
+    },
+    {
+      title: "GPT-3 Website",
+      description: "Design & Development",
+      imgUrl: gpt3,
+      url: "",
+    },
+    {
+      title: "Selia",
+      description:
+        "Website to find psychological help, on this page you can schedule virtual appointments . website developed in react",
+      imgUrl: selia,
+      url: "https://selia.co/",
+    },
+    {
+      title: "Adertic Website",
+      description:
+        "Website built in HTML and CSS, for a law firm specialized in computer law",
+      imgUrl: adertic,
+      url: "https://www.adertic.com.co/",
+    },
     {
       title: "Intra Website",
       description:
@@ -21,33 +50,6 @@ export const Projects = () => {
         "Weather application developed in React, which uses the openweathermap API to obtain data in real time",
       imgUrl: weather,
       url: "https://panayar.github.io/weather-app/",
-    },
-    {
-      title: "Selia",
-      description:
-        "website to find psychological help, on this page you can schedule virtual appointments . website developed in react",
-      imgUrl: selia,
-      url: "https://selia.co/",
-    },
-    {
-      title: "Adertic Website",
-      description:
-        "Website built in HTML and CSS, for a law firm specialized in computer law",
-      imgUrl: adertic,
-      url: "https://www.adertic.com.co/",
-    },
-    {
-      title: "App music",
-      description:
-        "Music application developed in react, which uses the spotify API to obtain data in real time",
-      imgUrl: adertic,
-      url: "",
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: adertic,
-      url: "",
     },
   ];
 
@@ -70,8 +72,7 @@ export const Projects = () => {
             </p>
           </Col>
         </Row>
-        <Row data-aos="fade-up"
-              data-aos-duration="1800">
+        <Row data-aos="fade-up" data-aos-duration="1800">
           {projects.map((project, index) => {
             return <ProjectCard key={index} {...project} />;
           })}
