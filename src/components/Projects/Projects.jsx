@@ -14,14 +14,14 @@ export const Projects = () => {
       title: "Intra website",
       description: "Web page developed with REACT and bootstrap, for a technology company",
       imgUrl: intra,
-      url: "",
+      url: "https://panayar.github.io/INTRA_website/",
     },
     {
       title: "Hoobank",
       description:
         "Website developed in react and tailwind, for a company that provides financial services",
       imgUrl: hoobank,
-      url: "",
+      url: "https://panayar.github.io/hoobank/",
     },
     {
       title: "Selia",
@@ -34,7 +34,7 @@ export const Projects = () => {
       title: "GPT-3 Website",
       description: "Design & Development",
       imgUrl: gpt3,
-      url: "",
+      url: "https://panayar.github.io/GPT-3-website/",
     },
     {
       title: "Adertic Website",
@@ -48,7 +48,7 @@ export const Projects = () => {
       description:
         "Weather app built in react, where you can see the weather of the cities you want",
       imgUrl: weather,
-      url: "",
+      url: "panayar.github.io/weather-app/",
     },
   ];
 
