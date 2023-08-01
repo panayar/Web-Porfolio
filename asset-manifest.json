@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Web-Porfolio/static/css/main.e12169dd.css",
-    "main.js": "/Web-Porfolio/static/js/main.2f0620d9.js",
+    "main.css": "/Web-Porfolio/static/css/main.2b0d9abf.css",
+    "main.js": "/Web-Porfolio/static/js/main.5491cd1d.js",
     "static/media/singleRobot.svg": "/Web-Porfolio/static/media/singleRobot.3e0f9730eee1d912643e2f83ae72f2c9.svg",
     "static/media/adertic.png": "/Web-Porfolio/static/media/adertic.8fd8cad7f99510ae4ed4.png",
     "static/media/gpt3.png": "/Web-Porfolio/static/media/gpt3.66543d843d431594e059.png",
@@ -32,11 +32,11 @@
     "static/media/arch.svg": "/Web-Porfolio/static/media/arch.9bd6b0becaff9789666e0604f27dfdb8.svg",
     "static/media/angular.svg": "/Web-Porfolio/static/media/angular.3d1492e7f57687b13f9ca843edc829bd.svg",
     "static/media/logo.svg": "/Web-Porfolio/static/media/logo.cffda69c05e1667e2583f829192d0d7a.svg",
-    "main.e12169dd.css.map": "/Web-Porfolio/static/css/main.e12169dd.css.map",
-    "main.2f0620d9.js.map": "/Web-Porfolio/static/js/main.2f0620d9.js.map"
+    "main.2b0d9abf.css.map": "/Web-Porfolio/static/css/main.2b0d9abf.css.map",
+    "main.5491cd1d.js.map": "/Web-Porfolio/static/js/main.5491cd1d.js.map"
   },
   "entrypoints": [
-    "static/css/main.e12169dd.css",
-    "static/js/main.2f0620d9.js"
+    "static/css/main.2b0d9abf.css",
+    "static/js/main.5491cd1d.js"
   ]
 }
