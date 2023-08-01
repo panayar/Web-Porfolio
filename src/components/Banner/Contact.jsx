@@ -28,18 +28,18 @@ const Contact = () => {
             </p>
 
             <div className={styles.btnContainer}>
-              <button className={styles.spanText}>
-                <a href="https://github.com/panayar">
-                  <AiFillLinkedin />
+              <a href="https://github.com/panayar" className={styles.bannerText}>
+                <button className={styles.spanText}>
+                  <AiFillLinkedin className={styles.bannerIcon} />
                   paulaanaya
-                </a>
-              </button>
-              <button className={styles.spanText}>
-                <a href="mailto:paulaanayar@gmail.com">
-                  <SiGmail />
+                </button>
+              </a>
+              <a href="mailto:paulaanayar@gmail.com" className={styles.bannerText}>
+                <button className={styles.spanText}>
+                  <SiGmail className={styles.bannerIcon} />
                   paulaanayar@gmail.com
-                </a>
-              </button>
+                </button>
+              </a>
             </div>
           </div>
         </div>

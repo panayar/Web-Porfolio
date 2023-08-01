@@ -28,15 +28,11 @@
   align-items: center;
   text-decoration: none;
   font-size: 18px;
+  color: white;
   background-color: #ff934e;
 }
 
-.spanText a {
-  text-decoration: none;
+.bannerIcon {
   color: white;
-  font-weight: 500;
-}
-
-.spanText a:hover {
-  color: white;
+  margin-right: 8px;
 }
