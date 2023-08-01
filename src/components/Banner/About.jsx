@@ -29,7 +29,7 @@ function About() {
             <span className="orange-point">.</span>
           </h1>
           <p
-            className="text-left subtitle"
+            className="text-center subtitle"
             data-aos="fade-up"
             data-aos-duration="1800"
           >
