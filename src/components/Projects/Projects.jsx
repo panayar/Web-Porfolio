@@ -11,16 +11,16 @@ import "./projects.css";
 export const Projects = () => {
   const projects = [
     {
+      title: "Intra website",
+      description: "Web page developed with REACT and bootstrap, for a technology company",
+      imgUrl: intra,
+      url: "",
+    },
+    {
       title: "Hoobank",
       description:
         "Website developed in react and tailwind, for a company that provides financial services",
       imgUrl: hoobank,
-      url: "",
-    },
-    {
-      title: "GPT-3 Website",
-      description: "Design & Development",
-      imgUrl: gpt3,
       url: "",
     },
     {
@@ -31,6 +31,12 @@ export const Projects = () => {
       url: "https://selia.co/",
     },
     {
+      title: "GPT-3 Website",
+      description: "Design & Development",
+      imgUrl: gpt3,
+      url: "",
+    },
+    {
       title: "Adertic Website",
       description:
         "Website built in HTML and CSS, for a law firm specialized in computer law",
@@ -38,18 +44,11 @@ export const Projects = () => {
       url: "https://www.adertic.com.co/",
     },
     {
-      title: "Intra Website",
-      description:
-        "Web page developed with REACT and bootstrap, for a technology company",
-      imgUrl: intra,
-      url: "https://panayar.github.io/INTRA_website/",
-    },
-    {
       title: "Weather App",
       description:
-        "Weather application developed in React, which uses the openweathermap API to obtain data in real time",
+        "Weather app built in react, where you can see the weather of the cities you want",
       imgUrl: weather,
-      url: "https://panayar.github.io/weather-app/",
+      url: "",
     },
   ];
 

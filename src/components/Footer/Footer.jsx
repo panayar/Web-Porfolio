@@ -23,16 +23,19 @@ function Footer() {
             </p>
           </div>
           <div className={styles.listItem}>
-            <a href="https://github.com/panayar" target="__blank">
-              <AiFillGithub />
-            </a>
-            <a href="https://www.linkedin.com/in/paulaanaya/" target="__blank">
-              <AiFillLinkedin />
-            </a>
-            <a href="mailto:paulaanayaramirez27@gmail.com" target="__blank">
-              <SiGmail />
-            </a>
-          </div>
+              <a href="https://github.com/panayar" target="__blank">
+                <AiFillGithub />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/paulaanaya/"
+                target="__blank"
+              >
+                <AiFillLinkedin />
+              </a>
+              <a href="mailto:paulaanayaramirez27@gmail.com" target="__blank">
+                <SiGmail />
+              </a>
+            </div>
         </div>
       </footer>
     </>

@@ -29,15 +29,15 @@ const Contact = () => {
 
             <div className={styles.btnContainer}>
               <button className={styles.spanText}>
-                <a href="github">
-                <AiFillLinkedin/>
+                <a href="https://github.com/panayar">
+                  <AiFillLinkedin />
                   paulaanaya
                 </a>
               </button>
               <button className={styles.spanText}>
                 <a href="mailto:paulaanayar@gmail.com">
-                <SiGmail/>
-                paulaanayar@gmail.com
+                  <SiGmail />
+                  paulaanayar@gmail.com
                 </a>
               </button>
             </div>
