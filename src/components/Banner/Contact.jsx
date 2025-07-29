@@ -30,7 +30,7 @@ const Contact = () => {
             <p
               className={`${styles.description} mt-4 text-center mb-5`}
               data-aos="fade-up"
-              data-aos-duration="1800"
+              data-aos-duration="1200"
             >
               If you are looking to hire a developer, <br />
               I'm currently available for freelance work and job
@@ -41,7 +41,7 @@ const Contact = () => {
                 <div
                   className={styles.inputContainer}
                   data-aos="fade-up"
-                  data-aos-duration="1800"
+                  data-aos-duration="1200"
                 >
                   <input
                     type="email"
