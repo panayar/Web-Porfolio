@@ -1,39 +1,58 @@
+/* Skills/styles.module.css */
 .container {
-  margin: 2rem auto 2rem auto;
-  padding: 0 10rem;
+  margin: 4rem auto;
+  padding: 0 2rem;
   max-width: 1200px;
-}
-.containerInfo {
-  text-align: center;
-}
-.containerInfo h2 {
-  font-size: 2.4rem;
-  color: #ff7315;
-  background-size: 300%;
-  -webkit-background-clip: text;
-  background-clip: text; 
-  -webkit-text-fill-color: transparent;
-}
-.containerInfo p {
-  font-size: 1.2rem;
-}
-.servicesContainer {
+  min-height: 100vh;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
 }
-@media (max-width: 769px) {
-  .servicesContainer {
-    flex-direction: column;
-    align-items: center;
-  }
+
+.headerContainer {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8rem 10rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+/* Tablet styles */
+@media (max-width: 768px) {
   .container {
-    margin: 2rem auto 2rem auto;
-    padding: 0 10rem;
+    padding: 0 1.5rem;
+    margin: 3rem auto;
+  }
+  
+  .servicesGrid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    max-width: 500px;
+  }
+  
+  .headerContainer {
+    margin-bottom: 3rem;
   }
 }
-@media (max-width: 500px) {
+
+/* Mobile styles */
+@media (max-width: 480px) {
   .container {
-    padding: 0 2rem;
+    padding: 0 1rem;
+    margin: 2rem auto;
+  }
+  
+  .servicesGrid {
+    gap: 2.5rem;
+  }
+  
+  .headerContainer {
+    margin-bottom: 2.5rem;
   }
 }

@@ -68,25 +68,14 @@ function Navbar() {
         className="d-sx-none d-md-none d-sm-none d-lg-block"
         id={styles.navIcons}
       >
-        <a
-          href="https://www.linkedin.com/in/paulaanaya/"
-          target="__blank"
-        >
-          <img      width={35} src={Gmail} alt="gmail" className={styles.icons} />
+        <a href="mailto:paulaanayar@gmail.com" target="_blank" rel="noreferrer">
+          <img width={35} src={Gmail} alt="gmail" className={styles.icons} />
         </a>
 
         <a href="https://github.com/panayar" target="__blank" rel="noreferrer">
-          <img
-            width={30}
-            src={GitHub}
-            alt="github"
-            className={styles.icons}
-          />
+          <img width={30} src={GitHub} alt="github" className={styles.icons} />
         </a>
-        <a
-          href="https://www.linkedin.com/in/paulaanaya/"
-          target="__blank"
-        >
+        <a href="https://www.linkedin.com/in/paulaanaya/" target="__blank">
           <img
             width={25}
             src={LinkedIn}

@@ -1,3 +1,4 @@
+// Skills Component (Skills/index.js)
 import styles from "./styles.module.css";
 import { Service } from "../Service/index";
 import { FaFeatherAlt } from "react-icons/fa";
@@ -11,45 +12,50 @@ import { useEffect } from "react";
 function Skills() {
   const services = [
     {
-      title: "Unique Interfaces",
-      text: "I design original and different user interfaces, so your project has a unique and outstanding touch.",
+      title: "Data Pipeline Architecture",
+      text: "I design scalable data pipelines using cloud platforms for efficient data flow and analytics.",
       icon: <BsStars />,
     },
     {
-      title: "Interactive Applications",
-      text: "I develop web applications focused on interaction and dynamism, so your users have a memorable experience.",
+      title: "Full-Stack Development",
+      text: "I build interactive web applications using React, Java, and modern technologies.",
       icon: <BsLightningChargeFill />,
     },
     {
-      title: "Continuous Learning",
-      text: "I stay constantly trained in programming languages and technologies to offer innovative and quality solutions.",
+      title: "Cloud Infrastructure",
+      text: "I implement backend systems and cloud solutions for application and data processing workflows.",
       icon: <BsHeartFill />,
     },
     {
-      title: "Optimal Performance",
-      text: "I apply best practices and write clean code to ensure the scalability and maintainability of the project.",
+      title: "Performance Optimization",
+      text: "I apply best practices to ensure scalability, maintainability, and optimal performance.",
       icon: <FaFeatherAlt />,
     },
   ];
+
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
+
   return (
     <section id="skills" className={styles.container}>
-      <p className="p-subtitle text-center" data-aos="fade-down" data-aos-duration="1800">
-        Core Focus.
-        <span className="orange-point">.</span>
-      </p>
-      <h1
-        className="p-title mb-5 text-center"
-        data-aos="fade-up"
-        data-aos-duration="1800"
-      >
-        SKILLS
-      </h1>
+      <div className={styles.headerContainer}>
+        <p className="p-subtitle text-center" data-aos="fade-down" data-aos-duration="1800">
+          Core Focus
+          <span className="orange-point">.</span>
+        </p>
+        <h1
+          className="p-title text-center"
+          data-aos="fade-up"
+          data-aos-duration="1800"
+        >
+          SKILLS
+        </h1>
+      </div>
+      
       <div
-        className={`${styles.servicesContainer} mt-4`}
+        className={styles.servicesGrid}
         data-aos="fade-up"
         data-aos-duration="2000"
       >

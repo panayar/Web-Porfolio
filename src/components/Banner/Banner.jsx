@@ -4,7 +4,7 @@ import Circle from "../../img/circle.svg";
 import Robot from "../../img/singleRobot.svg";
 import AOS from "aos";
 import "../../css/global.css";
-import pdf from "../../files/Paula Andrea Anaya Ramirez - CV.pdf";
+import pdf from "../../files/CV - Paula Anaya Ramirez .pdf";
 
 import styles from "./Banner.module.css";
 
@@ -26,14 +26,14 @@ function Banner() {
               data-aos-duration="1300"
             >
               Hi! I’m Paula <span className={`${styles.wave}`} >👋🏼</span>
-              <br /> <span className={styles.subtitle}>Software Developer.</span>
+              <br /> <span className={styles.subtitle}>Software Engineer.</span>
             </h1>
             <p
               className={styles.description}
               data-aos="fade-right"
               data-aos-duration="1800"
             >
-              Software engineer working across the stack, now focusing on data engineering and scalable backend systems.
+              Creating solutions across the stack, now focusing on data engineering and scalable backend systems.
             </p>
             <br />
             <a href="#project">

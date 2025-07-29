@@ -9,20 +9,20 @@ import "./card.css";
 export const Projects = () => {
   const projects = [
     {
-      title: "Bally Website Research",
+      title: "INTRA Website",
       subtitle: "Design & Development",
       imgUrl: intra,
       url: "https://panayar.github.io/INTRA_website/",
     },
     {
-      title: "Bally Website Research",
+      title: "HooBank Portal", 
       subtitle: "Design & Development",
       imgUrl: hoobank,
       url: "https://panayar.github.io/hoobank/",
     },
     {
-      title: "Selia",
-      subtitle: "Design & Development",
+      title: "Selia Project",
+      subtitle: "Design & Development", 
       imgUrl: selia,
       url: "https://selia.co/",
     },
@@ -33,7 +33,6 @@ export const Projects = () => {
       url: "https://panayar.github.io/GPT-3-website/",
     }
   ];
-
   return (
     <section className="project" id="project">
       <Container>
