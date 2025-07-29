@@ -12,7 +12,7 @@
   background: linear-gradient(
     90.06deg,
     rgba(244, 94, 39, 0.92) -12.91%,
-    #ed5353 59.48%
+    #fe934c 59.48%
   );
   color: white;
   height: 4rem;
@@ -27,10 +27,10 @@
   width: 2rem;
 }
 .title {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.7rem;
+  font-weight: 600;
   margin-bottom: 2.4rem;
-  margin-top: 2.4rem;
+  margin-top: 2rem;
   text-align: center;
 }
 .text {

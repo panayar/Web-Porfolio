@@ -1,117 +1,136 @@
-/* slider */
-  
+/* Carousel container */
+.slider {
+  overflow: hidden;
+  height: 34rem;
+  width: 25rem;
+  position: relative;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.slider::after,
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 6rem;
+  width: 100%;
+  z-index: 1;
+}
+
+.slider::before {
+  top: -12px;
+}
+
+.slider::after {
+  bottom: -12px;
+}
+
+.tech {
+  animation: scroll 30s linear infinite;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+.tech2 {
+  animation: scroll2 30s linear infinite;
+  right: 0;
+  bottom: 0;
+}
+
+.tech div {
+  height: 10rem;
+  width: 10rem;
+  background: linear-gradient(
+    109.35deg,
+    rgb(134, 24, 24) -96.47%,
+    rgb(35, 26, 50) 2.59%
+  );
+  backdrop-filter: blur(40px); 
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.8rem;
+}
+
+.tech div img {
+  height: 7rem;
+  width: 7rem;
+}
+
+/* Large screens */
+@media screen and (min-width: 1400px) {
   .slider {
-    overflow: hidden;
-    height: 30rem;
-    width: 25rem;
-    position: relative;
-  }
-  .slider::after,
-  .slider::before {
-    content: "";
-    position: absolute;
-    height: 6rem;
-    width: 100%;
-    z-index: 1;
-  }
-  .slider::before {
-    top: -12px;
-  }
-  .slider::after {
-    bottom: -12px;
+    height: 38rem;
+    width: 28rem;
   }
   
-  .tech {
-    animation: scroll 30s linear infinite;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-  }
-  .tech2 {
-    animation: scroll2 30s linear infinite;
-    right: 0;
-    bottom: 0;
-  }
   .tech div {
-    height: 10rem;
-    width: 10rem;
-    background: linear-gradient(
-      109.35deg,
-      rgb(134, 24, 24) -96.47%,
-      rgb(35, 26, 50) 2.59%
-    );
-    backdrop-filter: blur(40px); 
-    border-radius: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0.8rem;
+    height: 11rem;
+    width: 11rem;
+    margin: 0.9rem;
   }
+  
   .tech div img {
-    height: 7rem;
-    width: 7rem;
+    height: 7.5rem;
+    width: 7.5rem;
+  }
+}
+
+/* Medium to large screens */
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .slider {
+    height: 30rem;
+    width: 22rem;
   }
   
-  @media screen and (max-width: 768px) {
-    .slider {
-      overflow: hidden;
-      height: 200px;
-      width: 15rem;
-      position: relative;
-    }
-  
-    .off{
-      display: none;
-    }
-  
-    .tech div {
-      height: 6rem;
-      width: 6rem;
-      background: linear-gradient(
-        109.35deg,
-        rgb(134, 24, 24) -96.47%,
-        rgb(35, 26, 50) 2.59%
-      );
-      backdrop-filter: blur(40px); 
-      border-radius: 18px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0.8rem;
-    }
-    .tech div img {
-      height: 4rem;
-      width: 4rem;
-    }
-  
-    .topAlign{
-      margin-top: 300px;
-    }
+  .tech div {
+    height: 9rem;
+    width: 9rem;
+    margin: 0.7rem;
   }
   
-  @keyframes scroll2 {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(
-        calc(11.6rem * 10)
-      );
-    }
+  .tech div img {
+    height: 6rem;
+    width: 6rem;
   }
-  @keyframes scroll {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(
-        calc(-11.6rem * 9)
-      );
-    }
+}
+
+/* Mobile and tablet */
+@media screen and (max-width: 991px) {
+  .slider {
+    height: 200px;
+    width: 15rem;
+  }
+
+  .tech div {
+    height: 6rem;
+    width: 6rem;
+    margin: 0.6rem;
   }
   
-  
-  
-  
-  
-  
+  .tech div img {
+    height: 4rem;
+    width: 4rem;
+  }
+}
+
+/* Animations */
+@keyframes scroll2 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(11.6rem * 10));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(-11.6rem * 9));
+  }
+}

@@ -37,16 +37,19 @@ function Skills() {
   }, []);
   return (
     <section id="skills" className={styles.container}>
+      <p className="p-subtitle text-center" data-aos="fade-down" data-aos-duration="1800">
+        Core Focus.
+        <span className="orange-point">.</span>
+      </p>
       <h1
-        className="text-center mb-5"
-        data-aos="fade-right"
+        className="p-title mb-5 text-center"
+        data-aos="fade-up"
         data-aos-duration="1800"
       >
-        Skills
-        <span className="orange-point">.</span>
+        SKILLS
       </h1>
       <div
-        className={styles.servicesContainer}
+        className={`${styles.servicesContainer} mt-4`}
         data-aos="fade-up"
         data-aos-duration="2000"
       >

@@ -1,0 +1,134 @@
+/* projects banner  */
+.project {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-subtitle {
+  font-size: var(--sm);
+  font-weight: 500;
+  /* color: var(--main-orange); */
+}
+
+.p-title {
+  font-weight: 700;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary {
+  display: block;
+}
+
+.secondary {
+  display: none;
+}
+
+/* card css */
+
+.project-card-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.project-card-subtitle {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.project-s-card-subtitle {
+  font-size: var(--sm);
+  font-weight: 600;
+  text-align: left !important;
+  margin-bottom: 10px;
+}
+
+.project-card-title {
+  font-size: var(--md-lg);
+  font-weight: 700;
+  margin: 10px 0;
+  text-wrap: wrap;
+}
+
+.project-s-card {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 700;
+  font-size: 38px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.project-card-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.arrow-icon {
+  margin-top: 10px;
+  width: 30px;
+  transition: transform 0.3s ease;
+}
+.arrow-s-icon {
+  margin-top: 10px;
+  width: 30px;
+  transition: transform 0.3s ease;
+}
+
+.arrow-icon:hover {
+  transform: translateY(-5px) translateX(3px);
+}
+
+.arrow-s-icon:hover{
+    transform: translateY(-5px) translateX(3px);
+}
+
+.project-card-content-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.project-card-image {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* responsive */
+
+@media screen and (max-width: 982px) {
+  .arrow-icon {
+    display: none;
+  }
+  .project-s-card-subtitle {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .primary {
+    display: none;
+  }
+  .secondary {
+    display: block;
+  }
+  .arrow-s-icon {
+    width: 25px;
+  }
+
+  .project {
+    height: auto;
+  }
+}

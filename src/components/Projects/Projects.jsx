@@ -1,55 +1,37 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "../Card/ProjectCard";
-import adertic from "../../img/adertic.png";
 import intra from "../../img/intra.png";
-import weather from "../../img/weather.png";
 import hoobank from "../../img/hoobank.png";
 import gpt3 from "../../img/gpt3.png";
 import selia from "../../img/selia.png";
-import "./projects.css";
+import "./card.css";
 
 export const Projects = () => {
   const projects = [
     {
-      title: "Intra website",
-      description: "Web page developed with REACT and bootstrap, for a technology company",
+      title: "Bally Website Research",
+      subtitle: "Design & Development",
       imgUrl: intra,
       url: "https://panayar.github.io/INTRA_website/",
     },
     {
-      title: "Hoobank",
-      description:
-        "Website developed in react and tailwind, for a company that provides financial services",
+      title: "Bally Website Research",
+      subtitle: "Design & Development",
       imgUrl: hoobank,
       url: "https://panayar.github.io/hoobank/",
     },
     {
       title: "Selia",
-      description:
-        "Website to find psychological help, on this page you can schedule virtual appointments . website developed in react",
+      subtitle: "Design & Development",
       imgUrl: selia,
       url: "https://selia.co/",
     },
     {
       title: "GPT-3 Website",
-      description: "Design & Development",
+      subtitle: "Design & Development",
       imgUrl: gpt3,
       url: "https://panayar.github.io/GPT-3-website/",
-    },
-    {
-      title: "Adertic Website",
-      description:
-        "Website built in HTML and CSS, for a law firm specialized in computer law",
-      imgUrl: adertic,
-      url: "https://www.adertic.com.co/",
-    },
-    {
-      title: "Weather App",
-      description:
-        "Weather app built in react, where you can see the weather of the cities you want",
-      imgUrl: weather,
-      url: "panayar.github.io/weather-app/",
-    },
+    }
   ];
 
   return (
@@ -57,29 +39,46 @@ export const Projects = () => {
       <Container>
         <Row>
           <Col md={12}>
-            <h1
-              className="text-center"
-              data-aos="fade-up"
+            <p
+              className="p-subtitle"
+              data-aos="fade-down"
               data-aos-duration="1800"
             >
-              Projects
+              Portfolio
               <span className="orange-point">.</span>
-            </h1>
-            <p data-aos="fade-up" data-aos-duration="1800">
-              Explore some of the exciting projects I have worked on as a
-              developer.
             </p>
+            <h1
+              className="p-title"
+              data-aos="fade-down"
+              data-aos-duration="1800"
+            >
+              RECENT PROJECTS
+            </h1>
           </Col>
         </Row>
-        <Row data-aos="fade-up" data-aos-duration="1800">
+        <Row data-aos="fade-up" data-aos-duration="1800" className="cards-container">
           {projects.map((project, index) => {
-            return <ProjectCard key={index} {...project} />;
+            return (
+              <Col key={index} md={6} lg={6} sm={12} className="mt-5 card-col">
+                <ProjectCard
+                  key={index}
+                  title={project.title}
+                  subtitle={project.subtitle}
+                  imgUrl={project.imgUrl}
+                  url={project.url}
+                />
+              </Col>
+            );
           })}
         </Row>
+        <Row className="mt-5">
+          <Col md={12} className="text-center">
+            <a href="https://github.com/panayar" target="_blank" rel="noopener noreferrer">
+              <button className="blkBtn">See More </button>
+            </a>
+          </Col>
+        </Row>
       </Container>
-      <br />
-      <br />
-      <br />
     </section>
   );
 };

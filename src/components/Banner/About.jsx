@@ -9,47 +9,49 @@ function About() {
     AOS.init();
     AOS.refresh();
   }, []);
+  
   return (
     <section className={styles.aboutContainer} id="aboutme">
-      <div className="row" id={styles.content}>
-        <div
-          className={`d-lg-block d-md-none d-sm-none col-sm-12 col-lg-6 col-md-12 p-4 text-sm-justify ${styles.off}`}
-        >
-          <div className={styles.center} style={{ marginTop: "250px" }}>
-            <Carrousel />
+      <div className="container-fluid">
+        <div className={`row ${styles.contentRow}`} id={styles.content}>
+          <div className={`col-lg-6 d-none d-lg-flex ${styles.carouselColumn}`}>
+            <div className={styles.carouselWrapper}>
+              <Carrousel />
+            </div>
           </div>
-        </div>
-        <div className="col-sm-12 col-lg-6 col-md-12 p-3 d-flex flex-column justify-content-center">
-          <h1
-            className="text-center"
-            data-aos="fade-up"
-            data-aos-duration="1800"
-          >
-            About me
-            <span className="orange-point">.</span>
-          </h1>
-          <p
-            className="text-center subtitle"
-            data-aos="fade-up"
-            data-aos-duration="1800"
-          >
-            I have experience with the following technologies:
-          </p>
-          <p
-            className="text-justify second-parragraph"
-            data-aos="fade-up"
-            data-aos-duration="1800"
-          >
-            Experienced developer with proficiency in frontend{" "}
-            <strong>(TypeScript, JavaScript, React, Angular)</strong> and
-            backend <strong>(Node.js, Express.js, MongoDB)</strong>. Familiar
-            with Agile, <strong>Git, testing frameworks </strong>, and various
-            databases. Passionate about innovation and quick learning. Valuable
-            asset to any development team. Dedicated to delivering high-quality
-            results and meeting project deadlines. Effective communicator and
-            collaborator within cross-functional teams. Committed to continuous
-            improvement and staying up-to-date with the latest industry trends.
-          </p>
+          <div className={`col-lg-6 col-md-12 col-sm-12 ${styles.textColumn}`}>
+            <div className={styles.textContent}>
+              <p
+                className="p-subtitle"
+                data-aos="fade-down"
+                data-aos-duration="1800"
+              >
+                Tech Stack
+                <span className="orange-point">.</span>
+              </p>
+              <h1
+                data-aos="fade-up"
+                data-aos-duration="1800"
+                className="p-title"
+              >
+                ABOUT ME
+              </h1>
+              <p
+                className="text-left second-parragraph"
+                data-aos="fade-up"
+                data-aos-duration="1800"
+              >
+                Software Engineer with 5+ years of experience delivering scalable
+                applications across fintech, healthtech, and crypto. I specialize in
+                building clean, efficient systems using React, Java, and modern web
+                technologies. Recently, I've been expanding my focus toward data
+                engineering, working with cloud platforms, data pipelines, and
+                backend infrastructure. I'm passionate about solving complex
+                problems, writing maintainable code, and growing in the world of
+                data and cloud technologies.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

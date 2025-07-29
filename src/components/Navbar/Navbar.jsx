@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Logo from "../../img/logo.svg";
-import GitHub from "../../img/github-icon.svg";
-import LinkedIn from "../../img/linkedin-icon.svg";
+import GitHub from "../../img/icons/github-icon.svg";
+import Gmail from "../../img/icons/gmail-icon.svg";
+import LinkedIn from "../../img/icons/linkedin-icon.svg";
 
 import styles from "./Navbar.module.css";
 
@@ -14,9 +14,6 @@ function Navbar() {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light mt-3">
-      <a href="/">
-        <img src={Logo} width="65px" alt="logo" />
-      </a>
       <button
         className="navbar-toggler"
         type="button"
@@ -33,10 +30,10 @@ function Navbar() {
         id="navbarNav"
         data-spy="scroll"
       >
-        <ul className={`navbar-nav mt-2 ${styles.marginNavbar}`}>
+        {/* <ul className={`navbar-nav mt-2 ${styles.marginNavbar}`}>
           <li className={styles.navItem}>
             <a
-              className="nav-link active"
+              className={`${styles.navLink} ${active ? styles.active : ""}`}
               aria-current="page"
               href="#home"
               onClick={openModal}
@@ -45,35 +42,42 @@ function Navbar() {
             </a>
           </li>
           <li className={styles.navItem}>
-            <a className="nav-link" href="#project" onClick={openModal}>
+            <a className={styles.navLink} href="#project" onClick={openModal}>
               Projects
             </a>
           </li>
           <li className={styles.navItem}>
-            <a className="nav-link" href="#aboutme" onClick={openModal}>
+            <a className={styles.navLink} href="#aboutme" onClick={openModal}>
               About me
             </a>
           </li>
           <li className={styles.navItem}>
-            <a className="nav-link" href="#skills" onClick={openModal}>
+            <a className={styles.navLink} href="#skills" onClick={openModal}>
               Skills
             </a>
           </li>
           <li className={styles.navItem}>
-            <a className="nav-link" href="#contact" onClick={openModal}>
+            <a className={styles.navLink} href="#contact" onClick={openModal}>
               Contact
             </a>
           </li>
-        </ul>
+        </ul> */}
       </div>
 
       <div
         className="d-sx-none d-md-none d-sm-none d-lg-block"
         id={styles.navIcons}
       >
+        <a
+          href="https://www.linkedin.com/in/paulaanaya/"
+          target="__blank"
+        >
+          <img      width={35} src={Gmail} alt="gmail" className={styles.icons} />
+        </a>
+
         <a href="https://github.com/panayar" target="__blank" rel="noreferrer">
           <img
-            width="40px"
+            width={30}
             src={GitHub}
             alt="github"
             className={styles.icons}
@@ -82,10 +86,9 @@ function Navbar() {
         <a
           href="https://www.linkedin.com/in/paulaanaya/"
           target="__blank"
-          className={styles.marginIcons}
         >
           <img
-            width="35px"
+            width={25}
             src={LinkedIn}
             alt="linkedin"
             className={styles.icons}

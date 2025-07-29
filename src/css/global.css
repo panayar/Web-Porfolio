@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Poppins", sans-serif;
   overflow-x: hidden;
   text-decoration: none;
 }
@@ -14,16 +14,33 @@ h1, h2, h3, h4, div, p, img, section, main, span{
 }
 
 :root {
-  --main-orange: #FF934E;
+  --main-orange: #F98534;
   --transparent-orange: rgba(255, 115, 21, 0.1);
   --input-gray: #f7f7f7;
   --white: #ffffff;
   --black: #000000;
   --gray: #000000a9;
-  --lg: 40px;
-  --sm: 14px;
+  --lg: 60px;
+  --md-lg: 45px;
+  --sm: 18px;
   --md: 20px;
   --parragraph: 18px;
+
+  /* Typography weights */
+  --font-poppins: "Poppins", sans-serif;
+  --poppins-thin: 100;
+  --poppins-extralight: 200;
+  --poppins-light: 300;
+  --poppins-regular: 400;
+  --poppins-medium: 500;
+  --poppins-semibold: 600;
+  --poppins-bold: 700;
+  --poppins-extrabold: 800;
+  --poppins-black: 900;
+
+  /* Italic styles (still require weight and font-style manually) */
+  --italic: italic;
+  --normal: normal;
 }
 
 .button{
@@ -62,7 +79,7 @@ h1, h2, h3, h4, div, p, img, section, main, span{
 
 .second-parragraph {
   color: var(--gray);
-  font-size: var(--parragraph);
+  font-size: var(--md);
   font-weight: 400;
   margin: 24px 0 24px 0;
 }
@@ -72,8 +89,9 @@ h1, h2, h3, h4, div, p, img, section, main, span{
 }
 
 .orange-point{
-  font-size: 80px;
+  font-size: 25px;
   color: var(--main-orange);
+  margin-left: 5px;
 }
 
 /*Buttons*/
@@ -88,6 +106,7 @@ h1, h2, h3, h4, div, p, img, section, main, span{
   background-color: var(--main-orange);
   border-radius: 15px;
 }
+
 
 .orgBtn:hover {
   opacity: 0.9;
@@ -107,5 +126,21 @@ h1, h2, h3, h4, div, p, img, section, main, span{
 
 .whiteBtn:hover {
   background-color: var(--transparent-orange);
+  transition: 0.5s;
+}
+
+.blkBtn {
+  width: 150px;
+  height: 45px;
+  font-size: 15px;
+  color: var(--white);
+  font-weight: 600;
+  border-radius: 15px;
+  border: none;
+  background-color: var(--black);
+}
+
+.blkBtn:hover {
+  background-color: #1f1d1def;
   transition: 0.5s;
 }
