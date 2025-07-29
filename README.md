@@ -1,2 +1,1 @@
-![image](https://github.com/panayar/Web-Porfolio/assets/71273441/13fcae0a-3606-4ee4-bf4d-576eaa059f47)
-
+<img width="1792" height="1271" alt="image" src="https://github.com/user-attachments/assets/68b31186-6db7-4e70-9cc7-736c3cfbc294" />
