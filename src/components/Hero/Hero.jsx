@@ -1,4 +1,4 @@
-import { Download, Mail, ArrowRight } from "lucide-react";
+import { Download, Mail, ArrowDown } from "lucide-react";
 import { Dithering } from "@paper-design/shaders-react";
 import { motion } from "framer-motion";
 import { useTheme } from "../../context/ThemeContext";
@@ -78,7 +78,7 @@ export default function Hero() {
         {/* Scroll hint */}
         <motion.div {...fadeUp(0.55)} className={styles.scrollHint}>
           <span>Scroll to explore</span>
-          <ArrowRight size={14} className={styles.scrollArrow} />
+          <ArrowDown size={14} className={styles.scrollArrow} />
         </motion.div>
       </div>
 

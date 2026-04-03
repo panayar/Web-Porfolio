@@ -226,8 +226,8 @@
 }
 
 @keyframes nudge {
-  0%, 100% { transform: translateX(0); }
-  50% { transform: translateX(4px); }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(4px); }
 }
 
 /* ── Right Panel ── */
