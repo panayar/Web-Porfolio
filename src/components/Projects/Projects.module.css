@@ -1,0 +1,244 @@
+/* ── Showcase Layout ── */
+.showcase {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3xl);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Photo Grid (Left) ── */
+.photoGrid {
+  display: flex;
+  gap: var(--space-md);
+  flex-shrink: 0;
+}
+
+.photoCol {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.photoColOffset1 {
+  margin-top: 4rem;
+}
+
+.photoColOffset2 {
+  margin-top: 1.5rem;
+}
+
+/* Size variants */
+.photoSmall { width: 200px; height: 220px; }
+.photoMedium { width: 230px; height: 250px; }
+.photoLarge { width: 215px; height: 235px; }
+
+/* ── Photo Card ── */
+.photo {
+  position: relative;
+  display: block;
+  width: 220px;
+  height: 240px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  cursor: pointer;
+  transition: opacity 0.4s ease, box-shadow 0.4s ease;
+  text-decoration: none;
+}
+
+[data-theme="light"] .photo {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.photo.dimmed {
+  opacity: 0.5;
+}
+
+.photoImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.5s ease;
+}
+
+.photoOverlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(167, 139, 250, 0.3);
+  color: white;
+  animation: fadeIn 0.2s ease;
+}
+
+/* ── Name List (Right) ── */
+.nameList {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  padding-top: var(--space-sm);
+}
+
+/* ── Project Row ── */
+.row {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.row.dimmed {
+  opacity: 0.4;
+}
+
+.rowHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.indicator {
+  width: 1rem;
+  height: 0.75rem;
+  border-radius: 5px;
+  background: var(--color-text-muted);
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+  opacity: 0.3;
+}
+
+.indicatorActive {
+  background: var(--color-accent);
+  width: 1.25rem;
+  opacity: 1;
+}
+
+.rowName {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: var(--color-text-secondary);
+  transition: color 0.3s ease;
+}
+
+.rowNameActive {
+  color: var(--color-text-primary);
+}
+
+.rowIcon {
+  display: flex;
+  align-items: center;
+  color: var(--color-accent);
+  opacity: 0;
+  transform: translateX(-8px);
+  transition: all 0.2s ease;
+  pointer-events: none;
+  margin-left: 0.25rem;
+}
+
+.rowIconActive {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.rowRole {
+  margin: 0.375rem 0 0 1.7rem;
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-text-muted);
+}
+
+/* ── More Link ── */
+.moreWrap {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-border);
+}
+
+.moreLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-family: var(--font-mono);
+  font-size: var(--text-small);
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.moreLink:hover {
+  color: var(--color-accent);
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .photo {
+    width: 300px;
+    height: 230px;
+  }
+}
+
+@media (max-width: 768px) {
+  .showcase {
+    flex-direction: column;
+    gap: var(--space-2xl);
+  }
+
+  .photoGrid {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: var(--space-sm);
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .photo {
+    width: 240px;
+    height: 185px;
+    flex-shrink: 0;
+  }
+
+  .photoColOffset {
+    margin-top: 3rem;
+  }
+
+  .nameList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+    width: 100%;
+  }
+
+  .moreWrap {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 480px) {
+  .photo {
+    width: 190px;
+    height: 145px;
+  }
+
+  .nameList {
+    grid-template-columns: 1fr;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
