@@ -8,39 +8,42 @@
   justify-content: center;
   overflow: hidden;
   width: 100%;
-  z-index: 0;
 }
 
-/* ── Lamp Apparatus ── */
+/* ── Lamp Apparatus — GPU-only transforms ── */
 .lampArea {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
   display: flex;
-  width: 100%;
-  flex: 1;
-  transform: scaleY(1.25);
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
-  isolation: isolate;
-  z-index: 0;
+  pointer-events: none;
 }
 
-/* Beams */
+/* Beams — fixed width, animated with scaleX (GPU) not width (layout) */
 .beamLeft {
   position: absolute;
-  inset: auto;
   right: 50%;
+  bottom: 0;
+  width: 30rem;
   height: 14rem;
-  overflow: visible;
+  transform-origin: right center;
   background: conic-gradient(from 70deg at center top, #A78BFA, transparent, transparent);
+  will-change: transform, opacity;
 }
 
 .beamRight {
   position: absolute;
-  inset: auto;
   left: 50%;
+  bottom: 0;
+  width: 30rem;
   height: 14rem;
-  overflow: visible;
+  transform-origin: left center;
   background: conic-gradient(from 290deg at center top, transparent, transparent, #A78BFA);
+  will-change: transform, opacity;
 }
 
 [data-theme="light"] .beamLeft {
@@ -50,135 +53,77 @@
   background: conic-gradient(from 290deg at center top, transparent, transparent, rgba(139, 92, 246, 0.5));
 }
 
-/* Masks */
-.maskBottom {
+/* Glow orb — simple radial, GPU composited */
+.glowOrb {
   position: absolute;
-  width: 100%;
-  bottom: 0;
-  height: 10rem;
-  z-index: 20;
-  background: var(--color-bg-primary);
-  -webkit-mask-image: linear-gradient(to top, white, transparent);
-  mask-image: linear-gradient(to top, white, transparent);
-}
-
-.maskLeft {
-  position: absolute;
-  width: 10rem;
-  height: 100%;
-  left: 0;
-  bottom: 0;
-  z-index: 20;
-  background: var(--color-bg-primary);
-  -webkit-mask-image: linear-gradient(to right, white, transparent);
-  mask-image: linear-gradient(to right, white, transparent);
-}
-
-.maskRight {
-  position: absolute;
-  width: 10rem;
-  height: 100%;
-  right: 0;
-  bottom: 0;
-  z-index: 20;
-  background: var(--color-bg-primary);
-  -webkit-mask-image: linear-gradient(to left, white, transparent);
-  mask-image: linear-gradient(to left, white, transparent);
-}
-
-/* Blur layers */
-.blurWide {
-  position: absolute;
-  top: 50%;
-  height: 12rem;
-  width: 100%;
-  transform: translateY(3rem) scaleX(1.5);
-  background: var(--color-bg-primary);
-  filter: blur(2rem);
-}
-
-.blurBackdrop {
-  position: absolute;
-  top: 50%;
-  z-index: 50;
-  height: 12rem;
-  width: 100%;
-  background: transparent;
-  opacity: 0.1;
-  backdrop-filter: blur(12px);
-}
-
-/* Glow */
-.glowLarge {
-  position: absolute;
-  inset: auto;
-  z-index: 50;
-  height: 9rem;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
   width: 28rem;
-  transform: translateY(-50%);
+  height: 10rem;
   border-radius: 9999px;
-  background: #A78BFA;
+  background: radial-gradient(ellipse at center, #A78BFA 0%, transparent 70%);
   opacity: 0.5;
-  filter: blur(3rem);
+  will-change: transform, opacity;
 }
 
-[data-theme="light"] .glowLarge {
-  opacity: 0.15;
-  background: #8B5CF6;
-}
-
-.glowFocused {
-  position: absolute;
-  inset: auto;
-  z-index: 30;
-  height: 9rem;
-  transform: translateY(-6rem);
-  border-radius: 9999px;
-  background: #C4B5FD;
-  filter: blur(2rem);
-}
-
-[data-theme="light"] .glowFocused {
-  background: #8B5CF6;
+[data-theme="light"] .glowOrb {
   opacity: 0.2;
+  background: radial-gradient(ellipse at center, #8B5CF6 0%, transparent 70%);
 }
 
+/* Light line — thin horizontal bar */
 .lightLine {
   position: absolute;
-  inset: auto;
-  z-index: 50;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30rem;
   height: 2px;
-  transform: translateY(-7rem);
   background: #C4B5FD;
+  transform-origin: center;
+  will-change: transform, opacity;
 }
 
 [data-theme="light"] .lightLine {
   background: rgba(139, 92, 246, 0.5);
 }
 
-.topMask {
+/* Top fade — hides beam tops */
+.topFade {
   position: absolute;
-  inset: auto;
-  z-index: 40;
-  height: 11rem;
-  width: 100%;
-  transform: translateY(-12.5rem);
-  background: var(--color-bg-primary);
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: linear-gradient(to bottom, var(--color-bg-primary) 30%, transparent);
+  z-index: 1;
+}
+
+/* Bottom fade — softens edge into content */
+.bottomFade {
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+  right: 0;
+  height: 4rem;
+  background: linear-gradient(to top, var(--color-bg-primary), transparent);
+  z-index: 1;
 }
 
 /* ── Content ── */
 .content {
   position: relative;
-  z-index: 50;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 var(--space-xl);
-  transform: translateY(-20rem);
+  text-align: center;
 }
 
 .inner {
-  text-align: center;
+  max-width: 600px;
 }
 
 .label {
@@ -196,7 +141,6 @@
   background: rgba(167, 139, 250, 0.25);
   border: 1px solid rgba(196, 181, 253, 0.35);
   border-radius: var(--radius-full);
-  backdrop-filter: blur(8px);
 }
 
 [data-theme="light"] .label {
@@ -233,9 +177,6 @@
   font-size: var(--text-body);
   line-height: 1.7;
   margin-bottom: var(--space-2xl);
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .actions {
@@ -267,18 +208,14 @@
 /* ── Responsive ── */
 @media (max-width: 768px) {
   .lamp {
-    min-height: auto;
-    padding-bottom: var(--space-3xl);
+    min-height: 80vh;
   }
 
   .lampArea {
-    flex: 0 0 auto;
-    height: 35vh;
-    min-height: 250px;
+    height: 40%;
   }
 
   .content {
-    transform: translateY(-8rem);
     padding: 0 var(--space-lg);
   }
 
@@ -288,7 +225,6 @@
 
   .text {
     font-size: var(--text-small);
-    margin-bottom: var(--space-xl);
   }
 
   .btnPrimary {
@@ -296,13 +232,18 @@
     padding: 0.75rem 1.25rem;
   }
 
-  .glowLarge {
-    width: 14rem;
+  .glowOrb {
+    width: 16rem;
   }
 
   .beamLeft,
   .beamRight {
+    width: 18rem;
     height: 10rem;
+  }
+
+  .lightLine {
+    width: 18rem;
   }
 
   .label {
@@ -312,13 +253,11 @@
 }
 
 @media (max-width: 480px) {
-  .lampArea {
-    height: 30vh;
-    min-height: 200px;
+  .lamp {
+    min-height: 70vh;
   }
 
   .content {
-    transform: translateY(-6rem);
     padding: 0 var(--space-md);
   }
 
@@ -326,12 +265,17 @@
     font-size: clamp(1.3rem, 7vw, 1.8rem);
   }
 
-  .glowLarge {
-    width: 10rem;
+  .glowOrb {
+    width: 12rem;
   }
 
-  .btnPrimary {
-    font-size: var(--text-small);
-    padding: 0.7rem 1.1rem;
+  .beamLeft,
+  .beamRight {
+    width: 12rem;
+    height: 8rem;
+  }
+
+  .lightLine {
+    width: 12rem;
   }
 }
