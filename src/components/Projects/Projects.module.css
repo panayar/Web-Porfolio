@@ -67,6 +67,12 @@
   transition: filter 0.5s ease;
 }
 
+.photoImgContain {
+  object-fit: contain;
+  padding: var(--space-lg);
+  background: #000;
+}
+
 .photoOverlay {
   position: absolute;
   inset: 0;

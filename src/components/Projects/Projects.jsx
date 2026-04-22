@@ -7,6 +7,7 @@ import hoobank from "../../img/hoobank.png";
 import gpt3 from "../../img/gpt3.png";
 import selia from "../../img/selia.png";
 import clippy from "../../img/clippy.png";
+import rec from "../../img/rec.png";
 import styles from "./Projects.module.css";
 
 const projects = [
@@ -16,6 +17,14 @@ const projects = [
     role: "macOS Plugin",
     imgUrl: clippy,
     url: "https://clippy.bar/",
+  },
+  {
+    id: "rec",
+    title: "Rec",
+    role: "macOS Plugin",
+    imgUrl: rec,
+    fit: "contain",
+    url: "https://www.recop.xyz/",
   },
   {
     id: "intra",
@@ -153,7 +162,7 @@ function PhotoCard({ project, hoveredId, onHover, className = "" }) {
       <img
         src={project.imgUrl}
         alt={project.title}
-        className={styles.photoImg}
+        className={`${styles.photoImg} ${project.fit === "contain" ? styles.photoImgContain : ""}`}
         loading="lazy"
         style={{
           filter: isActive
